@@ -20,7 +20,7 @@ Building a consistent coding habit is crucial for me as I aspire to become a pro
 
 Throughout this journey, I will share:
 
-- **Videos:** Recordings of my hands-on work in coding, basic electronics, and robotics.
+- **Video Links:** Recordings of my hands-on work in coding, basic electronics, and robotics.
 - **Notes:** Detailed notes and explanations of concepts I encounter daily.
 - **Program Codes:** All the programs and projects I develop during the challenge in Python, Java, C++, and more.
 
