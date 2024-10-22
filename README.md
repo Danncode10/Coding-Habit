@@ -1,9 +1,5 @@
 # Coding Habit: 21-Day Coding Challenge
 
-This repository tracks my 21-day coding journey for a GE Entrep project. Each day, I document my coding activities, progress, and lessons learned as I work towards building a consistent habit and improving my programming skills.
-
-## 
-
 Welcome to **Coding Habit**, my 21-day journey where I document and share my daily coding and tech-related activities. This project is part of our GE Entrep subject, and its main goal is to help me develop a consistent coding habit while improving my skills across various programming languages, electronics, and robotics.
 
 ## Overview
