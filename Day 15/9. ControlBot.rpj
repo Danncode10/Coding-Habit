@@ -1,0 +1,139 @@
+RogicCode
+004
+FUNCTION 1
+{
+    WHILE    
+    {
+    CONTACT_SW (INPUT_PORT 1) ON
+    {
+DIRECTION
+OFF
+OFF
+OFF
+OFF
+    }
+    IR_SENSOR (INPUT_PORT 1) ON
+    {
+DIRECTION
+ON 1 B 15
+ON 2 B 15
+OFF
+OFF
+    }
+DIRECTION
+OFF
+OFF
+OFF
+OFF
+    }
+}
+FUNCTION 2
+{
+    WHILE    
+    {
+    CONTACT_SW (INPUT_PORT 3) ON
+    {
+    }
+    CONTACT_SW (INPUT_PORT 4) ON
+    {
+    }
+DIRECTION
+ON 1 F 0
+ON 2 F 0
+OFF
+OFF
+    }
+}
+FUNCTION 3
+{
+    WHILE    
+    {
+    CONTACT_SW (INPUT_PORT 3) ON
+    {
+DIRECTION
+ON 1 F 7
+ON 2 F 15
+OFF
+OFF
+    }
+    }
+    CONTACT_SW (INPUT_PORT 4) ON
+    {
+DIRECTION
+ON 1 F 15
+ON 2 F 7
+OFF
+OFF
+    }
+DIRECTION
+ON 1 F 0
+ON 2 F 0
+OFF
+OFF
+}
+FUNCTION 4
+{
+    WHILE    
+    {
+    CONTACT_SW (INPUT_PORT 1) ON
+    {
+DIRECTION
+OFF
+OFF
+OFF
+OFF
+    }
+    IR_SENSOR (INPUT_PORT 1) ON
+    {
+DIRECTION
+ON 1 B 15
+ON 2 B 15
+OFF
+OFF
+    }
+    CONTACT_SW (INPUT_PORT 1) ON
+    {
+DIRECTION
+ON 1 B 15
+ON 2 F 15
+OFF
+OFF
+    }
+    CONTACT_SW (INPUT_PORT 1) ON
+    {
+DIRECTION
+ON 1 F 15
+ON 2 B 15
+OFF
+OFF
+    }
+DIRECTION
+ON 1 F 0
+ON 2 F 0
+OFF
+OFF
+    }
+}
+MAIN
+{
+}
+PARTS
+{
+POSITION 1086 120
+        CALL     2
+}
+PARTS
+{
+POSITION 1214 123
+        CALL     1
+}
+PARTS
+{
+POSITION 816 128
+        CALL     4
+}
+PARTS
+{
+POSITION 941 130
+        CALL     3
+}

@@ -1,0 +1,140 @@
+RogicCode
+004
+FUNCTION 1
+{
+    WHILE    
+    {
+    CONTACT_SW (INPUT_PORT 1) ON
+    {
+DIRECTION
+ON 1 F 15
+ON 2 F 15
+OFF
+OFF
+    }
+DIRECTION
+OFF
+OFF
+OFF
+OFF
+    }
+}
+FUNCTION 2
+{
+    WHILE    
+    {
+    CONTACT_SW (INPUT_PORT 1) ON
+    {
+    }
+    }
+    CONTACT_SW (INPUT_PORT 1) ON
+    {
+    }
+DIRECTION
+ON 1 F 0
+ON 2 F 0
+OFF
+OFF
+}
+FUNCTION 3
+{
+    WHILE    
+    {
+    CONTACT_SW (INPUT_PORT 2) ON
+    {
+DIRECTION
+ON 1 F 15
+ON 2 F 15
+OFF
+OFF
+    }
+    CONTACT_SW (INPUT_PORT 3) ON
+    {
+DIRECTION
+ON 1 F 15
+ON 2 F 15
+OFF
+OFF
+    }
+DIRECTION
+ON 1 F 0
+ON 2 F 0
+OFF
+OFF
+    }
+}
+FUNCTION 4
+{
+    WHILE    
+    {
+    CONTACT_SW (INPUT_PORT 1) ON
+    {
+DIRECTION
+ON 1 F 15
+ON 2 F 15
+OFF
+OFF
+    }
+    CONTACT_SW (INPUT_PORT 1) ON
+    {
+DIRECTION
+ON 1 F 15
+ON 2 B 15
+OFF
+OFF
+    }
+    CONTACT_SW (INPUT_PORT 1) ON
+    {
+DIRECTION
+ON 1 B 15
+ON 2 F 15
+OFF
+OFF
+    }
+DIRECTION
+ON 1 F 0
+ON 2 F 0
+OFF
+OFF
+    }
+}
+MAIN
+{
+}
+PARTS
+{
+POSITION 291 982
+    LOOP    10
+    {
+    CONTACT_SW (INPUT_PORT 4) ON
+    {
+    }
+DELAY    0.5
+    CONTACT_SW (INPUT_PORT 4) OFF
+    {
+    }
+    }
+}
+PARTS
+{
+POSITION 873 124
+        CALL     4
+}
+PARTS
+{
+POSITION 992 131
+        CALL     3
+}
+PARTS
+{
+POSITION 1107 140
+        CALL     2
+}
+PARTS
+{
+POSITION 1201 135
+        CALL     1
+}
+COMMENT
+POINT 1172 100
+1: press no.1 Contact sensor, the robot moves forward

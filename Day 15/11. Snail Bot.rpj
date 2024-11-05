@@ -1,0 +1,154 @@
+RogicCode
+004
+FUNCTION 1
+{
+    WHILE    
+    {
+    IF     (INPUT_PORT 01)
+    {
+    IF     (INPUT_PORT 02)
+    {
+DIRECTION
+ON 1 F 15
+ON 2 F 15
+OFF
+OFF
+DELAY    1.0
+    }
+    else
+    {
+DIRECTION
+OFF
+OFF
+OFF
+OFF
+    }
+    }
+    else
+    {
+    }
+    }
+}
+FUNCTION 2
+{
+    WHILE    
+    {
+    IF     (INPUT_PORT 01)
+    {
+DIRECTION
+ON 1 B 15
+ON 2 F 15
+OFF
+OFF
+DELAY    0.5
+    }
+    else
+    {
+    IF     (INPUT_PORT 02)
+    {
+DIRECTION
+ON 1 F 15
+ON 2 B 15
+OFF
+OFF
+DELAY    0.5
+    }
+    else
+    {
+DIRECTION
+OFF
+OFF
+OFF
+OFF
+    }
+    }
+    }
+}
+FUNCTION 3
+{
+    WHILE    
+    {
+    IF     (INPUT_PORT 01)
+    {
+DIRECTION
+OFF
+OFF
+OFF
+OFF
+DELAY    0.5
+    }
+    else
+    {
+    IF     (INPUT_PORT 02)
+    {
+DIRECTION
+OFF
+OFF
+OFF
+OFF
+DELAY    0.5
+    }
+    else
+    {
+DIRECTION
+ON 1 F 0
+ON 2 F 0
+OFF
+OFF
+    }
+    }
+    }
+}
+FUNCTION 4
+{
+    WHILE    
+    {
+    IF     (INPUT_PORT 01)
+    {
+    IF     (INPUT_PORT 01)
+    {
+DIRECTION
+ON 1 B 15
+ON 2 B 15
+OFF
+OFF
+DELAY    0.5
+    }
+    else
+    {
+DIRECTION
+ON 1 F 0
+ON 2 F 15
+OFF
+OFF
+DELAY    0.5
+    }
+    }
+    else
+    {
+    }
+    }
+}
+MAIN
+{
+}
+PARTS
+{
+POSITION 1089 192
+        CALL     1
+}
+PARTS
+{
+POSITION 801 201
+        CALL     2
+}
+PARTS
+{
+POSITION 690 203
+        CALL     3
+}
+PARTS
+{
+POSITION 546 210
+        CALL     4
+}

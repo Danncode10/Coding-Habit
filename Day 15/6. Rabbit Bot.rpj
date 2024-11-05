@@ -1,0 +1,105 @@
+RogicCode
+004
+FUNCTION 1
+{
+    LOOP    100
+    {
+PORT_ON    1  
+DELAY    0.5
+PORT_OFF    1  
+PORT_ON    2  
+DELAY    0.5
+PORT_OFF    2  
+    }
+}
+FUNCTION 2
+{
+    LOOP    0
+    {
+DIRECTION
+ON 1 F 15
+ON 2 F 15
+OFF
+OFF
+DELAY    1.0
+    }
+    LOOP    0
+    {
+DIRECTION
+ON 1 B 15
+ON 2 B 15
+OFF
+OFF
+DELAY    1.0
+    }
+}
+FUNCTION 3
+{
+    WHILE    
+    {
+    LOOP    5
+    {
+PORT_ON    1  2  
+DELAY    0.5
+PORT_OFF    1  2  
+DELAY    0.5
+    }
+DIRECTION
+ON 1 F 15
+ON 2 F 15
+OFF
+OFF
+DELAY    1.0
+DIRECTION
+OFF
+OFF
+OFF
+OFF
+    }
+}
+FUNCTION 4
+{
+    WHILE    
+    {
+DIRECTION
+ON 1 F 15
+ON 2 F 15
+OFF
+OFF
+PORT_ON    1  2  
+DELAY    0.5
+PORT_OFF    1  2  
+DELAY    0.5
+    }
+}
+MAIN
+{
+}
+PARTS
+{
+POSITION 647 110
+DELAY    0.5
+}
+PARTS
+{
+POSITION 830 156
+        CALL     4
+}
+PARTS
+{
+POSITION 937 166
+        CALL     3
+}
+PARTS
+{
+POSITION 1027 173
+        CALL     2
+}
+PARTS
+{
+POSITION 1120 181
+        CALL     1
+}
+COMMENT
+POINT 1160 647
+1: Make the red and green keep blinking

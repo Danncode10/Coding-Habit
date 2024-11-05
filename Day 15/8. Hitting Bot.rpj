@@ -1,0 +1,113 @@
+RogicCode
+004
+FUNCTION 1
+{
+    WHILE    
+    {
+    RAND (INPUT_DELAY 10) ON
+    {
+PORT_ON    
+DELAY    0.3
+PORT_OFF    
+    }
+    }
+}
+FUNCTION 2
+{
+    WHILE    
+    {
+    RAND (INPUT_DELAY 1) ON
+    {
+PORT_ON    
+DELAY    0.3
+PORT_OFF    
+    }
+    }
+}
+FUNCTION 3
+{
+    WHILE    
+    {
+    RAND (INPUT_DELAY 1) ON
+    {
+DIRECTION
+OFF
+OFF
+OFF
+OFF
+DELAY    0.3
+    }
+DIRECTION
+OFF
+OFF
+OFF
+OFF
+    }
+}
+FUNCTION 4
+{
+    WHILE    
+    {
+    RAND (INPUT_DELAY 10) ON
+    {
+DIRECTION
+ON 1 F 15
+ON 2 F 15
+OFF
+OFF
+PORT_ON    4  
+DELAY    0.3
+    }
+PORT_OFF    4  
+DIRECTION
+ON 1 F 0
+ON 2 F 0
+OFF
+OFF
+    }
+}
+FUNCTION mINE
+{
+    LOOP    100
+    {
+PORT_ON    1  
+DELAY    0.5
+PORT_OFF    1  
+DELAY    0.5
+PORT_ON    2  
+DELAY    0.5
+PORT_OFF    2  
+DELAY    0.5
+PORT_ON    3  
+DELAY    0.5
+PORT_OFF    3  
+    }
+}
+MAIN
+{
+        CALL     mINE
+}
+PARTS
+{
+POSITION 1052 106
+        CALL     2
+}
+PARTS
+{
+POSITION 940 96
+        CALL     3
+}
+PARTS
+{
+POSITION 765 178
+PARTS
+{
+POSITION 1187 109
+        CALL     4
+        CALL     1
+}
+PARTS
+{
+POSITION 504 140
+DELAY    0.5
+}
