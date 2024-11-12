@@ -1,0 +1,4 @@
+4c4
+<     hypotenuse = a**2 + b**2  # Incorrect formula
+---
+>     hypotenuse = math.sqrt(a**2 + b**2)  # Correct formula
