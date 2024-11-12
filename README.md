@@ -1,6 +1,6 @@
-# Coding Habit: 21-Day Coding Challenge
+# Coding Habit: 30-Day Coding Challenge
 
-Welcome to **Coding Habit**, my 21-day journey where I document and share my daily coding and tech-related activities. This project is part of our GE Entrep subject, and its main goal is to help me develop a consistent coding habit while improving my skills across various programming languages, electronics, and robotics.
+Welcome to **Coding Habit**, my 30-day journey where I document and share my daily coding and tech-related activities. This project is part of our GE Entrep subject, and its main goal is to help me develop a consistent coding habit while improving my skills across various programming languages, electronics, and robotics.
 
 ## Overview
 
@@ -26,4 +26,4 @@ Throughout this journey, I will share:
 
 ## Future Goals
 
-At the end of this 21-day challenge, I aim to have built a strong foundation in coding, electronics, and problem-solving. This habit will serve as a stepping stone toward my long-term goal of becoming a professional computer scientist.
+At the end of this 30-day challenge, I aim to have built a strong foundation in coding, electronics, and problem-solving. This habit will serve as a stepping stone toward my long-term goal of becoming a professional computer scientist.
